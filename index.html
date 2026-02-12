@@ -8,14 +8,14 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <div class="header-container">
-          <nav class="header-nav">
+        <div class="header__container">
+          <nav class="header__nav">
             <a href="#">
               <img src="./images/logo.svg" alt="logotype" />
             </a>
-            <ul class="header-menu">
+            <ul class="header__menu">
               <li>
                 <a class="link" href="#traditions-section">Our traditions</a>
               </li>
@@ -34,62 +34,64 @@
     <main>
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title"><span>Modern</span> bakery</h1>
+          <h1 class="hero-section__title"><span>Modern</span> bakery</h1>
         </div>
       </section>
 
       <section class="advantages-section">
         <div class="container">
           <h2 class="hidden">Our advantages</h2>
-          <ul class="advantages-list">
-            <li class="advantages-item">High demand in the market</li>
-            <li class="advantages-item">Affordable formats</li>
-            <li class="advantages-item">Experienced management team</li>
+          <ul class="advantages-section__list">
+            <li class="advantages-section__item">High demand in the market</li>
+            <li class="advantages-section__item">Affordable formats</li>
+            <li class="advantages-section__item">
+              Experienced management team
+            </li>
           </ul>
         </div>
       </section>
 
       <section class="section traditions-section" id="traditions-section">
         <div class="container">
-          <div class="traditions-container">
-            <div class="traditions-content">
-              <h2 class="section-title traditions-title">
+          <div class="traditions-section__container">
+            <div class="traditions-section__content">
+              <h2 class="section-title traditions-section__title">
                 A new format of traditions
               </h2>
-              <p class="traditions-text">
+              <p class="traditions-section__text">
                 <span class="uppercase brand">shop bakery</span> - this is a
                 bakery that has taken all the best and preserved the taste of
                 traditional pastries and the naturalness of the ingredients.
               </p>
-              <p class="traditions-text limited">
+              <p class="traditions-section__text limited">
                 We work like the most famous chains —
                 <span class="brand">5 minutes and the order is ready</span>. And
                 our bakeries have stylish design and high quality service!
               </p>
             </div>
-            <div class="traditions-image">
+            <div class="traditions-section__image">
               <img src="./images/bakeryman.jpg" alt="baker-man" />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="chefs-section">
+      <section class="section chefs-section" id="chefs-section">
         <div class="container">
-          <h2 class="section-title centered chefs-title">
-            Our best <span class="chefs-span">chefs</span>
+          <h2 class="section-title centered chefs-section__title">
+            Our best <span class="chefs-section__span">chefs</span>
           </h2>
-          <div class="chefs-container">
-            <ul class="chefs-list">
-              <li class="chef-item">
+          <div class="chefs-section__container">
+            <ul class="chefs-section__list">
+              <li class="chefs-section__item">
                 <article class="chef-card">
                   <img
-                    class="chef-photo"
+                    class="chef-card__photo"
                     src="./images/Nastya-chef.jpg"
                     alt=""
                   />
-                  <div class="chef-text">
-                    <h3 class="chef-title">Nastya</h3>
+                  <div class="chef-card__text">
+                    <h3 class="chef-card__title">Nastya</h3>
                     <p>Hello, I'm Nastya!</p>
                     <p>
                       For 10 years now, I have been bringing interesting and
@@ -99,11 +101,15 @@
                   </div>
                 </article>
               </li>
-              <li class="chef-item">
+              <li class="chefs-section__item">
                 <article class="chef-card">
-                  <img class="chef-photo" src="./images/Vlad-chef.jpg" alt="" />
-                  <div class="chef-text">
-                    <h3 class="chef-title">Vlad</h3>
+                  <img
+                    class="chef-card__photo"
+                    src="./images/Vlad-chef.jpg"
+                    alt=""
+                  />
+                  <div class="chef-card__text">
+                    <h3 class="chef-card__title">Vlad</h3>
                     <p>Hello, I'm Vlad</p>
                     <p>
                       I have been a pastry chef for 18 years. SHOP BEKERY is our
@@ -119,25 +125,26 @@
         </div>
       </section>
 
-      <section class="section" id="formats-section">
+      <section class="section formats-section" id="formats-section">
         <div class="container">
-          <h2 class="section-title centered formats-section-title">Formats</h2>
-          <div class="formats-container">
+          <h2 class="section-title centered formats-section__title">Formats</h2>
+          <div class="formats-section__container">
             <button class="slider-btn" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
               </svg>
             </button>
-            <ul class="formats-list">
-              <li class="formats-item">
+
+            <ul class="formats-section__list">
+              <li class="formats-section__item">
                 <article class="format-card">
                   <img
-                    class="format-image"
+                    class="format-card__image"
                     src="./images/walrus.jpg"
                     alt="walrus"
                   />
-                  <h3 class="format-title">Walrus</h3>
-                  <div class="formats-text">
+                  <h3 class="format-card__title">Walrus</h3>
+                  <div class="format-card__text">
                     <p>Area: up to 120 m²</p>
                     <p>Menu: extended menu</p>
                     <p>
@@ -149,15 +156,15 @@
                 </article>
               </li>
 
-              <li class="formats-item">
+              <li class="formats-section__item">
                 <article class="format-card">
                   <img
-                    class="format-image"
-                    src="./images/walrus.jpg"
+                    class="format-card__image"
+                    src="./images/horsehoe.jpg"
                     alt="walrus"
                   />
-                  <h3 class="format-title">Horseshoe</h3>
-                  <div class="formats-text">
+                  <h3 class="format-card__title">Horseshoe</h3>
+                  <div class="format-card__text">
                     <p>Area: up to 25 m²</p>
                     <p>Menu: most popular menu items</p>
                     <p>Staff: 2 cashier sellers, 2 bakers, 1 baker assistant</p>
@@ -166,23 +173,27 @@
                 </article>
               </li>
 
-              <li class="formats-item">
+              <li class="formats-section__item">
                 <article class="format-card">
                   <img
-                    class="format-image"
-                    src="./images/walrus.jpg"
+                    class="format-card__image"
+                    src="./images/Handlebar.jpg"
                     alt="walrus"
                   />
-                  <h3 class="format-title">Handlebar</h3>
-                  <div class="formats-text">
+                  <h3 class="format-card__title">Handlebar</h3>
+                  <div class="format-card__text">
                     <p>Area: up to 15 m²</p>
                     <p>Menu: most popular menu items</p>
-                    <p>Staff: 1 seller, 1 baker, 1 baker assistant</p>
+                    <p>
+                      Staff: 1 seller, 1 baker, <br />
+                      1 baker assistant
+                    </p>
                     <p>Seating: not available</p>
                   </div>
                 </article>
               </li>
             </ul>
+
             <button class="slider-btn" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow-left"></use>
@@ -194,58 +205,57 @@
 
       <section class="section contact-section" id="contact-section">
         <div class="container">
-          <div class="contact-container">
-            <div class="contact-form">
-              <h2 class="section-title contact-title">
+          <div class="contact-section__container">
+            <div class="contact-section__form">
+              <h2 class="section-title contact-section__title">
                 Join the bakery network
               </h2>
               <p>Fill out the form so we can contact you!</p>
-              <form name="contact-form" autocomplete="off">
-                <div class="form-item">
-                  <label class="form-label hidden" for="contact-user-name"
+              <form class="form" name="contact-form" autocomplete="off">
+                <div class="form__item">
+                  <label class="form-label hidden" for="modal-user-name"
                     >Name</label
                   >
                   <input
-                    class="form-input"
+                    class="form__input"
                     type="text"
                     name="user-name"
-                    id="contact-user-name"
+                    id="modal-user-name"
                     placeholder="Name"
                     required
                   />
                 </div>
 
-                <div class="form-item">
-                  <label class="form-label hidden" for="contact-user-number"
+                <div class="form__item">
+                  <label class="form__label hidden" for="modal-user-number"
                     >Phone number</label
                   >
                   <input
-                    class="form-input"
+                    class="form__input"
                     type="tel"
                     name="user-number"
-                    id="contact-user-number"
+                    id="modal-user-number"
                     placeholder="Phone-number"
                     required
                     pattern="^\+380[1-9]{7,}"
                   />
-                  <span class="number-format">Number format: +380ххххххх</span>
                 </div>
 
-                <div class="form-item">
-                  <label class="form-label hidden" for="contact-user-email"
+                <div class="form__item">
+                  <label class="form__label hidden" for="modal-user-email"
                     >Email</label
                   >
                   <input
-                    class="form-input"
+                    class="form__input"
                     type="email"
                     name="user-email"
-                    id="contact-user-email"
+                    id="modal-user-email"
                     placeholder="Email"
                     required
                   />
                 </div>
 
-                <button type="submit" class="btn form-btn">
+                <button type="submit" class="btn form__btn">
                   Request a call
                 </button>
               </form>
@@ -256,7 +266,7 @@
               </p>
             </div>
             <iframe
-              class="contact-map"
+              class="contact-section__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1768079156162!5m2!1sru!2sua"
               width="600"
               height="600"
@@ -270,16 +280,16 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <div class="footer-container">
-          <nav class="footer-nav">
-            <div class="footer-logo">
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <div class="footer__logo">
               <a href="#">
                 <img src="./images/logo.svg" alt="logo" />
               </a>
             </div>
-            <ul class="footer-menu">
+            <ul class="footer__menu">
               <li>
                 <a class="link" href="#traditions-section">Our traditions</a>
               </li>
@@ -289,15 +299,15 @@
             </ul>
           </nav>
 
-          <address class="footer-address">
-            <ul class="address-list">
+          <address class="footer__address">
+            <ul class="footer__list">
               <li>
-                <a href="tel:+380960000007" class="adress-link"
+                <a href="tel:+380960000007" class="footer__link"
                   >+ 38 (096) 000 00 07</a
                 >
               </li>
               <li>
-                <a href="mailto:shopbakery@gmail.com" class="adress-link"
+                <a href="mailto:shopbakery@gmail.com" class="footer__link"
                   >shopbakery@gmail.com</a
                 >
               </li>
@@ -305,22 +315,22 @@
                 <a
                   href="https://maps.app.goo.gl/b6V4Fdszdk9fF5BW7"
                   target="_blank"
-                  class="adress-link"
+                  class="footer__link"
                 >
                   Україна, м. Київ, <br />
                   вул. Січових Стрільців 54</a
                 >
               </li>
               <li>
-                <div class="socials">
+                <div class="footer__socials">
                   <a href="#">
-                    <svg class="adress-icon" width="32" height="32">
+                    <svg class="footer__icon" width="32" height="32">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
 
                   <a href="#">
-                    <svg class="adress-icon" width="32" height="32">
+                    <svg class="footer__icon" width="32" height="32">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
@@ -328,9 +338,11 @@
               </li>
             </ul>
 
-            <div class="address-info">
-              <a href="#" target="_blank" class="adress-link">Privacy Policy</a>
-              <p class="adress-copyright">&copy; 2022 Data protected</p>
+            <div class="foooter__info">
+              <a href="#" target="_blank" class="footer__link"
+                >Privacy Policy</a
+              >
+              <p class="footer__copyright">&copy; 2022 Data protected</p>
             </div>
           </address>
         </div>
@@ -339,21 +351,21 @@
 
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">
-          <svg width="32" height="32" class="close">
+        <button class="modal__btn-close" type="button">
+          <svg width="32" height="32" class="modal__close">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="form-title">Request a call</h2>
-        <p class="form-">
+        <h2 class="modal__title">Request a call</h2>
+        <p class="modal__text">
           Leave a request and our specialist will contact you!
         </p>
 
-        <form name="contact-form" autocomplete="off">
-          <div class="form-item">
+        <form class="form" name="contact-form" autocomplete="off">
+          <div class="form__item">
             <label class="form-label hidden" for="modal-user-name">Name</label>
             <input
-              class="form-input"
+              class="form__input"
               type="text"
               name="user-name"
               id="modal-user-name"
@@ -362,12 +374,12 @@
             />
           </div>
 
-          <div class="form-item">
-            <label class="form-label hidden" for="modal-user-number"
+          <div class="form__item">
+            <label class="form__label hidden" for="modal-user-number"
               >Phone number</label
             >
             <input
-              class="form-input"
+              class="form__input"
               type="tel"
               name="user-number"
               id="modal-user-number"
@@ -375,15 +387,14 @@
               required
               pattern="^\+380[1-9]{7,}"
             />
-            <span class="number-format">Number format: +380ххххххх</span>
           </div>
 
-          <div class="form-item">
-            <label class="form-label hidden" for="modal-user-email"
+          <div class="form__item">
+            <label class="form__label hidden" for="modal-user-email"
               >Email</label
             >
             <input
-              class="form-input"
+              class="form__input"
               type="email"
               name="user-email"
               id="modal-user-email"
@@ -392,10 +403,10 @@
             />
           </div>
 
-          <button type="submit" class="btn form-btn">Request a call</button>
+          <button type="submit" class="btn form__btn">Request a call</button>
         </form>
 
-        <p class="form-text terms">
+        <p class="terms">
           By clicking the button I agree to the
           <a href="#" class="privacy">privacy policy</a>
         </p>

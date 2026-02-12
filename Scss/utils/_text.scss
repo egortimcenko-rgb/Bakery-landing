@@ -1,0 +1,30 @@
+.limited {
+  max-width: 340px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+  color: var(--primary-dark);
+}
+
+span {
+  color: var(--primary-green);
+}
+
+.brand {
+  font-weight: 600;
+}
+
+.section-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.section-title.centered {
+  text-align: center;
+}

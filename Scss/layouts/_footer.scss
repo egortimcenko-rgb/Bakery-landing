@@ -1,0 +1,99 @@
+.footer {
+  background-image: url(../images/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--primary-dark);
+
+  padding: 32px 0;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0;
+  }
+
+  &::before {
+    background-image: url(../images/decor-bread-small.png);
+    left: 0;
+    width: 180px;
+    height: 120px;
+  }
+
+  &::after {
+    background-image: url(../images/decor-bread-large.png);
+    width: 380px;
+    height: 190px;
+    right: 0;
+  }
+
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__nav,
+  &__address {
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__logo,
+  &__menu {
+    flex-grow: 1;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__link {
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--primary-light);
+
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: 0.3s;
+  }
+
+  &__link:hover {
+    color: var(--primary-green);
+  }
+
+  &__copyright {
+    color: var(--secondary-light);
+    font-size: 14px;
+  }
+
+  &__socials {
+    gap: 22px;
+    display: flex;
+  }
+
+  &__icon {
+    fill: var(--primary-light);
+    transition: 0.3s;
+  }
+
+  &__icon:hover {
+    fill: var(--primary-green);
+  }
+
+  &__list,
+  .address-info {
+    flex-grow: 1;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

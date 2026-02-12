@@ -1,35 +1,39 @@
-.form-item {
-  margin-bottom: 32px;
-}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
 
-// .form-label {
-//   display: block;
-// }
+  &::after {
+    content: "Number format: +380ххххххх";
+    font-size: 12px;
+    color: var(--primary-green);
+    position: absolute;
+    top: 135px;
+    left: 10px;
+  }
 
-.form-input {
-  padding: 16px 42px;
-  width: 100%;
-  border: 1px solid var(--secondary-light);
-  border-radius: 8px;
-  background-color: transparent;
-}
+  &__input {
+    padding: 16px 42px;
+    width: 100%;
+    border: 1px solid var(--secondary-light);
+    border-radius: 8px;
+    background-color: transparent;
+  }
 
-.form-input:focus {
-  border-color: var(--primary-green);
-  outline: none;
-}
+  &__input:focus {
+    border-color: var(--primary-green);
+    outline: none;
+  }
 
-.form-input::placeholder {
-  color: var(--secondary-light);
-}
+  &__input::placeholder {
+    color: var(--secondary-light);
+  }
 
-.form-btn {
-  display: block;
-  margin: 0 auto;
-}
-
-.form-text {
-  text-align: center;
+  &__btn {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .terms {
@@ -37,15 +41,5 @@
   max-width: 213px;
   margin: 0 auto;
   margin-top: 24px;
-}
-
-.form-title {
   text-align: center;
-  font-weight: 900;
-  font-size: 64px;
-  margin: 0;
-}
-
-.number-format {
-  font-size: 12px;
 }
