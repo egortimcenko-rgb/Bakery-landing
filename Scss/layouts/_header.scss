@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 32px;
+  padding-top: 16px;
 
   &__container {
     display: flex;
@@ -24,5 +24,26 @@
     gap: 64px;
     flex-grow: 1;
     justify-content: center;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    background-color: transparent;
+    border: none;
+    display: none;
+    fill: var(--primary-light);
+
+    @media screen and (max-width: $bp-desktop) {
+      display: block;
+    }
   }
 }

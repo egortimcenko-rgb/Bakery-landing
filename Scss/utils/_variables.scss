@@ -7,6 +7,10 @@
   --secondary-green: #cfcfbc;
 }
 
+$bp-mobile: 360px;
+$bp-tablet: 768px;
+$bp-desktop: 1280px;
+
 *,
 *::before,
 *::after {
@@ -21,6 +25,10 @@ body {
   line-height: 1.5;
   margin: 0;
   background-color: var(--primary-light);
+
+  @media screen and (max-width: $bp-desktop) {
+    font-size: 14px;
+  }
 }
 
 html {

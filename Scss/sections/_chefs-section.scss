@@ -14,6 +14,11 @@
 
       position: absolute;
       bottom: 24px;
+
+      @media screen and (max-width: $bp-desktop) {
+        display: none;
+        position: static;
+      }
     }
 
     &::before {
@@ -35,13 +40,23 @@
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+    }
   }
 
   &__item {
     flex-basis: calc((100% - 30px) / 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__container {
     padding: 80px 0 96px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 }

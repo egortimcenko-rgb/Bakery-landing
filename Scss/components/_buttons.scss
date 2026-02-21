@@ -35,6 +35,10 @@
   flex-shrink: 0;
 
   transition: 0.3s;
+
+  @media screen and (max-width: $bp-tablet) {
+    display: none;
+  }
 }
 
 .slider-btn:hover {

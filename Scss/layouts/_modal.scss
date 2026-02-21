@@ -10,6 +10,10 @@
   align-items: center;
 
   transition: 0.3s;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 0;
+  }
 }
 
 .backdrop.is-hidden {
@@ -25,11 +29,15 @@
   max-height: 880px;
   background-color: var(--primary-light);
   border-radius: 32px;
-  position: relative;
   padding: 128px;
   position: relative;
 
   overflow-y: auto;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 64px;
+    border-radius: 0;
+  }
 
   &__btn-close {
     position: absolute;
@@ -56,6 +64,10 @@
     font-weight: 900;
     font-size: 64px;
     margin: 0;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 32px;
+    }
   }
 
   &__text {
